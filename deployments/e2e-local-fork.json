@@ -1,0 +1,45 @@
+{
+  "network": "Aevum Testnet (44005)",
+  "rpc": "local fork",
+  "registry": "0x008FA4FAf50F182210bD9cA9a18496413Aa8434d",
+  "directory": "0xAdDe9bF0F0093a41524C5614505Dd2d2cc37dFec",
+  "merchant": "0x09e8D2E7802F7Ec7F186D4440075c6aE358dCd54",
+  "payer": "0x2887ECb7fce62c4e8F8A1aF4dD7269d9CD720f75",
+  "txs": {
+    "fundPayerTUSD8": "0x868a4859c4b46d138f6c2037b833624e4923a874ba7833c6ac9133447ddcad57",
+    "registerPayee": "0xa1590d3a33ee3deb852a42ca77d59c359b882a0527f3a1754e862994e0f800b1",
+    "createInvoice": "0x161b0538df3c95bfd4b48739490d46030bccf5f074a32865b96d28357d3d6de2",
+    "payWithPermit": "0x066d37c7a3a7a31d003174b2dae51acd49a35527bd9c0848b91ecd3f099088d3"
+  },
+  "invoiceId": 1,
+  "memo": "INV-0001 · AevumBill end-to-end demo",
+  "amount": "0.5 tUSD8",
+  "terms": "0x039cbe19f4a91aaf175902e8c3b34eb882edf10f25d48049803a6ae5f950ad2b",
+  "blocked": {
+    "wrongAmount": "WrongAmount",
+    "wrongInvoiceTerms": "TermsMismatch",
+    "notAllowedPayer": "PayerNotAllowed",
+    "doublePay": "InvoiceNotOpen"
+  },
+  "receipt": {
+    "status": "Paid",
+    "paid": "0.5",
+    "payer": "0x2887ECb7fce62c4e8F8A1aF4dD7269d9CD720f75",
+    "events": [
+      {
+        "event": "InvoiceCreated",
+        "block": 3253839,
+        "tx": "0x161b0538df3c95bfd4b48739490d46030bccf5f074a32865b96d28357d3d6de2"
+      },
+      {
+        "event": "InvoicePaid",
+        "block": 3253840,
+        "tx": "0x066d37c7a3a7a31d003174b2dae51acd49a35527bd9c0848b91ecd3f099088d3",
+        "amount": "0.5",
+        "fee": "0.0015",
+        "payer": "0x2887ECb7fce62c4e8F8A1aF4dD7269d9CD720f75"
+      }
+    ]
+  },
+  "finishedAt": "2026-11-15T17:39:47.719Z"
+}

@@ -1,0 +1,11 @@
+# secrets (testnet throwaway keys) - never commit
+.deployer.secret
+*.secret
+.env
+# build / deps
+node_modules/
+web/node_modules/
+contracts/out/
+contracts/cache/
+
+broadcast/
