@@ -2,14 +2,14 @@
 
 **On-chain invoices settled in tUSD8 on Aevum Testnet.** A merchant issues an invoice whose amount, payee, due date, memo and (optionally) the only allowed payer are locked on-chain. The payer opens a link, sees eight safety checks including a **verified payee name**, and pays exactly once with a single EIP-2612 permit signature + one transaction. The receipt is rebuilt straight from chain events.
 
-🎬 **[Demo video](docs/demo.mp4)** (4:22, English voiceover and subtitles)
+🎬 **[Demo video](https://solivansprvill-droid.github.io/aevum-bill/demo.html)** (4:22, English voiceover and subtitles · [MP4](docs/demo.mp4))
 
 Built for **Aevum Builder Challenge #1 (QDay × DoraHacks), Invoice Payments track**. All code in this repo was written during the build window (from 2026-11-16).
 
 | | |
 |---|---|
 | Live demo | https://solivansprvill-droid.github.io/aevum-bill/ |
-| Demo video | [Watch the 4-minute demo (MP4)](docs/demo.mp4) · [download from release v1.0-demo](https://github.com/solivansprvill-droid/aevum-bill/releases/download/v1.0-demo/aevumbill-demo.mp4) |
+| Demo video | [▶ Watch in the browser](https://solivansprvill-droid.github.io/aevum-bill/demo.html) (4:22) · [MP4 in repo](docs/demo.mp4) · [release v1.0-demo](https://github.com/solivansprvill-droid/aevum-bill/releases/tag/v1.0-demo) |
 | Network | Aevum Testnet · chain id `44005` · RPC `https://rpc-test.qday.info` · explorer https://explorer-test.qday.info |
 | Settlement token | tUSD8 (6 decimals, EIP-2612 permit, domain `tUSD8` / version `2`) [`0x4565…3483`](https://explorer-test.qday.info/address/0x456569838f1d43009A91ebA4263147Afd7233483) |
 | Contracts | see [Deployments](#deployments) |
