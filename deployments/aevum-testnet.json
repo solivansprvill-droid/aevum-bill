@@ -2,11 +2,14 @@
   "chainId": 44005,
   "network": "Aevum Testnet",
   "token": "0x456569838f1d43009A91ebA4263147Afd7233483",
-  "invoiceRegistry": null,
-  "payeeDirectory": null,
-  "treasury": null,
+  "invoiceRegistry": "0x06a520Aea98a81B30F78F4C4cf600e386b9C41f4",
+  "payeeDirectory": "0x008FA4FAf50F182210bD9cA9a18496413Aa8434d",
+  "treasury": "0x09e8D2E7802F7Ec7F186D4440075c6aE358dCd54",
   "feeBps": 30,
-  "deployBlock": null,
-  "deployer": null,
-  "txs": {}
+  "deployBlock": 3255882,
+  "deployer": "0x09e8D2E7802F7Ec7F186D4440075c6aE358dCd54",
+  "txs": {
+    "deployRegistry": "0xd7530205b58379cd2f156d34c855308a4a04fd88fd84f2809cd58734ae57acd5",
+    "deployDirectory": "0xd499c9b531f8a68ab7fc4538d810bd3dece1bb4486a86722615450287bed26c0"
+  }
 }

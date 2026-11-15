@@ -123,8 +123,19 @@ Status: **contracts compiled, tested and dry-run on an Aevum fork; the public te
 | Item | Value |
 |---|---|
 | Deployer (testnet-only throwaway) | `0x09e8D2E7802F7Ec7F186D4440075c6aE358dCd54` |
-| InvoiceRegistry | _pending_ |
-| PayeeDirectory | _pending_ |
+| InvoiceRegistry | [`0x06a520Aea98a81B30F78F4C4cf600e386b9C41f4`](https://explorer-test.qday.info/address/0x06a520Aea98a81B30F78F4C4cf600e386b9C41f4) |
+| PayeeDirectory | [`0x008FA4FAf50F182210bD9cA9a18496413Aa8434d`](https://explorer-test.qday.info/address/0x008FA4FAf50F182210bD9cA9a18496413Aa8434d) |
+
+### Live end-to-end run on Aevum Testnet (2026-11-16)
+
+| Step | Tx |
+|---|---|
+| registerPayee | [0xfa0effe3…](https://explorer-test.qday.info/tx/0xfa0effe3d65ab80358d88a171d8ffbf7aceece1269639c906fa01a4cd5d591c8) |
+| createInvoice | [0x82ead670…](https://explorer-test.qday.info/tx/0x82ead6703d67c7378b171c5b65990bb2ca13e1dd0342adfb2e806abab1268ac7) |
+| payWithPermit (0.5 tUSD8, fee 0.0015) | [0x17d0bdba…](https://explorer-test.qday.info/tx/0x17d0bdba79fb35b9b0cddfc87819d0992edb9c0582ae4428748fee15ff0558d9) |
+
+Blocked on-chain as expected: wrong amount (`WrongAmount`), edited terms (`TermsMismatch`), wrong payer (`PayerNotAllowed`), double payment (`InvoiceNotOpen`). Full log: `deployments/e2e-aevum-testnet.json`.
+
 
 Fork dry-run (anvil fork of Aevum Testnet against the **real tUSD8 contract and its permit**): `deployments/e2e-local-fork.json`. register → create → 3 blocked attacks (`WrongAmount`, `TermsMismatch`, `PayerNotAllowed`) → `payWithPermit` → double pay blocked (`InvoiceNotOpen`) → receipt (paid 0.5 tUSD8, fee 0.0015).
 <!-- DEPLOYMENTS:END -->
