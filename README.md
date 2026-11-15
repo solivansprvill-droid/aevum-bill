@@ -145,7 +145,7 @@ Fork dry-run (anvil fork of Aevum Testnet against the **real tUSD8 contract and 
 
 ## 6. Tests
 
-`forge test`: **26 tests pass**, including 7 fuzz properties at 1,000 runs each (see [`docs/test-results.txt`](docs/test-results.txt)).
+`forge test`: **26 tests pass**, including 6 fuzz properties at 1,000 runs each (see [`docs/test-results.txt`](docs/test-results.txt)).
 
 * value conservation: payer debit = payee credit + fee, fee ≤ 1%, registry balance always 0
 * only the exact amount is accepted; partial payments never overpay

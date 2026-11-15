@@ -25,7 +25,7 @@ Stablecoin invoicing today is "copy this address and amount", which invites redi
 - **Emergency** → pause blocks new invoices and payments, while cancels and refunds keep working
 
 ### How it's built
-- `InvoiceRegistry.sol` + `PayeeDirectory.sol` (Solidity 0.8.24, zero external deps), Foundry: **26 tests incl. 7 fuzz properties × 1,000 runs**, 95% line coverage on the registry.
+- `InvoiceRegistry.sol` + `PayeeDirectory.sol` (Solidity 0.8.24, zero external deps), Foundry: **26 tests incl. 6 fuzz properties × 1,000 runs**, 95% line coverage on the registry.
 - On-chain indexes (`invoicesOf`, `eventBlocks`) so a pure static frontend works within the Aevum RPC's 1,000-block `getLogs` cap. No backend, no indexer.
 - Vite + TypeScript + viem static app on GitHub Pages. It auto-adds chain 44005 to MetaMask / Rabby / OKX Wallet and uses the tUSD8 permit (domain `tUSD8`, version `2`, checked on-chain) with an approve + pay fallback.
 
